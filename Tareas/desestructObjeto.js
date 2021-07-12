@@ -34,7 +34,7 @@ function messageUser(name) {
 //EJERCICIO 1: Convertir a función de flecha:
 console.log('********* Ejercicio 1 ********');
 
-messageUser = (name) => `Hello, my name is ${name}`;
+const messageUser = (name) => `Hello, my name is ${name}`;
 
 console.log(messageUser('Bill Gates'));
 console.log('');
