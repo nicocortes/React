@@ -6,6 +6,7 @@ const App = ({ name, edad }) => {
   //   const nombre = 'Federico Martinez';
 
   return (
+    //Esto no es HTML, es JSX.
     <div>
       <h1>Soy {name}</h1>
       <hr></hr>

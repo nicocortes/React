@@ -4,4 +4,4 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import HelloWorld from './HelloWorld';
 
-ReactDOM.render(<HelloWorld />, document.getElementById('root'));
+ReactDOM.render(<HelloWorld saludo={'my friend'}/>, document.getElementById('root'));
