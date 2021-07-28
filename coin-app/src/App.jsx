@@ -1,61 +1,22 @@
-import React, { useState, useEffect } from "react";
-import CoinNavbar from "./components/CoinNavbar";
-import CoinSearch from "./components/CoinSearch";
-import CoinTable from "./components/CoinTable";
+//importación de React y Hooks
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+//importación de helpers
+import ProtectedRoute from "./helpers/protectedRoutes";
+//importacion de componentes
+import Home from "./components/Home";
+import Login from "./components/Login";
 
-//Funciones Helpers
-import { getCoins, searchCoins } from "./helpers/coinsFetch";
-
-const App = () => {
-  const [coins, setCoins] = useState({
-    datos: [],
-    loading: true,
-    update: false,
-  });
-
-  const [inputValue, setInputValue] = useState('')
-
-  useEffect(() => {
-    getCoins().then((respuesta) => {
-      setCoins({
-        datos: respuesta,
-        loading: false,
-        update: true,
-      });
-
-      setInputValue('')
-    });
-  }, [coins.update]);
-
-   useEffect(() => {
-     searchCoins(inputValue).then(respuesta=>{
-      setCoins({
-        datos: respuesta,
-        loading: false,
-        update: true,
-      });
-     })
-   }, [inputValue])
-
-
-  return (
-    <>
-      <CoinNavbar coins={coins} setCoins={setCoins}/>
-      <div className="container mt-3">
-        <CoinSearch inputValue={inputValue} setInputValue={setInputValue}/>
-          <div className="row">
-            <div className="col">
-
-              {coins.loading 
-              ? <h3 className='text-white text-center'>Cargando...</h3> 
-              :
-              <CoinTable coins={coins} />
-            }
-              </div>
-          </div>
-      </div>
-    </>
-  );
-};
+function App() {
+	return (
+		<Router>
+			<Switch>
+				<Route exact path="/login" component={Login} />
+				<ProtectedRoute exact path="/" component={Home} />
+				<Route to="*" component={() => "404 Not Found"} />
+			</Switch>
+		</Router>
+	);
+}
 
 export default App;
