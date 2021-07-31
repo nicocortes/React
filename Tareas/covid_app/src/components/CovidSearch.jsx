@@ -1,6 +1,9 @@
 import React from "react";
 
-const CovidSearch = () => {
+const CovidSearch = ({ inputValue, setInputValue }) => {
+	const inputChange = (e) => {
+		setInputValue(e.target.value);
+	};
 	return (
 		<div className="container">
 			<div className="row">
@@ -10,12 +13,13 @@ const CovidSearch = () => {
 				<form className="w-75 m-auto">
 					<input
 						type="email"
-						class="form-control"
-						id="exampleInputEmail1"
-						aria-describedby="emailHelp"
+						className="form-control"
+						placeholder="Argentina"
+						value={inputValue}
+						onChange={inputChange}
 					></input>
 
-					<button type="submit" class="btn btn-dark w-100 mt-3">
+					<button type="submit" className="btn btn-dark w-100 mt-3">
 						Buscar
 					</button>
 				</form>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CovidGlobalInfo from "../components/CovidGlobalInfo";
+import CovidNavbar from "../components/CovidNavbar";
 import CovidSearch from "../components/CovidSearch";
 import { getCovidData } from "../helpers/covidFetch";
 
@@ -22,6 +23,7 @@ const Home = () => {
 
 	return (
 		<div>
+			<CovidNavbar />
 			<section id="section-global-info">
 				<CovidGlobalInfo covidData={covidData} />
 			</section>

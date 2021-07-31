@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Error404 = () => {
 	return (
@@ -11,8 +12,12 @@ const Error404 = () => {
 					navegas por nuestra web. Mientras tanto puedes:
 				</h5>
 			</p>
-			<button className="btn btn-secondary me-3">INICIO</button>
-			<button className="btn btn-dark">CONTACTANOS</button>
+			<Link to="/">
+				<button className="btn btn-secondary me-3">IR A INICIO</button>
+			</Link>
+			<Link to="/contacto">
+				<button className="btn btn-dark">CONTACTANOS</button>
+			</Link>
 		</div>
 	);
 };

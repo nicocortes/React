@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import phone from "../assets/phone.png";
 import calendar from "../assets/calendar.png";
 
@@ -14,12 +15,16 @@ const Services = () => {
 					</h4>
 				</div>
 				<div className="col">
-					<img className="phone-logo" src={phone} alt="Phone logo" />
+					<Link to="*">
+						<img className="phone-logo" src={phone} alt="Phone logo" />
+					</Link>
 				</div>
 			</div>
 			<div className="row py-5 service-second">
 				<div className="col">
-					<img className="calendar-logo" src={calendar} alt="Calendar logo" />
+					<Link to="*">
+						<img className="calendar-logo" src={calendar} alt="Calendar logo" />
+					</Link>
 				</div>
 				<div className="col">
 					<h1 className="fw-bold">CALENDARIO DE VACUNAS</h1>
@@ -37,11 +42,11 @@ const Services = () => {
 				<form className="w-50 m-auto">
 					<input
 						type="email"
-						class="form-control"
+						className="form-control"
 						id="exampleInputEmail1"
 						aria-describedby="emailHelp"
 					></input>
-					<button type="submit" class="btn btn-dark w-100 mt-3">
+					<button type="submit" className="btn btn-dark w-100 mt-3">
 						Enviar
 					</button>
 				</form>

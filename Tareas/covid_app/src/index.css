@@ -5,6 +5,42 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+/* login */
+
+.login-container {
+	height: 400px;
+}
+
+.login-border-logo {
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.login-border-form {
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.login-section {
+	background-color: #1f92fa;
+	height: 100vh;
+	padding-top: 25vh;
+}
+
+.login-logo {
+	width: 50%;
+}
+
+.login-logo-background {
+	background-color: #1f92fa;
+}
+
+/* navbar */
+
+.app-logo {
+	width: 60px;
+}
+
 /* ********** global ********** */
 #section-global-info {
 	background-color: #1f92fa;
@@ -76,5 +112,42 @@ body {
 }
 
 .service-subscribe {
-	background-color: #eb4f1b;
+	color: #eb4f1b;
+}
+
+/* about */
+.about-banner {
+	width: 100%;
+}
+
+.about-section {
+	color: #eb4f1b;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+.about-info {
+	background-color: #dddddd;
+}
+
+/* **** contact */
+.covid-logo-contact {
+	width: 200px;
+}
+
+.contact-container {
+	border: 5px solid black;
+	border-radius: 20px;
+	background-color: white;
+	padding: 20px;
+}
+
+.prueba {
+	padding-top: 100px;
+	height: 100vh;
+	background-color: #dddddd;
+}
+
+.colores {
+	color: #1f92fa;
 }
