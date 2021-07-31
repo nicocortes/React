@@ -1,0 +1,80 @@
+body {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* ********** global ********** */
+#section-global-info {
+	background-color: #1f92fa;
+}
+
+.table-global {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.new-confirmed {
+	color: black;
+}
+
+.total-confirmed {
+	color: rgb(77, 77, 77);
+}
+
+/************ search  **********/
+#section-search {
+	height: 500px;
+	background-color: #dddddd;
+	/* background-color: #eb4f1b; */
+}
+
+.search-title {
+	color: #eb4f1b;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/***** error  ******/
+.error-title {
+	font-size: 100px;
+}
+
+.error-subtitle {
+	font-size: 60px;
+	margin-top: 20px;
+}
+
+.error-body {
+	background: rgb(31, 146, 250);
+	background: linear-gradient(
+		180deg,
+		rgba(31, 146, 250, 1) 0%,
+		rgba(221, 221, 221, 1) 48%,
+		rgba(235, 79, 27, 1) 100%
+	);
+	height: 100vh;
+}
+
+/***** services */
+.phone-logo {
+	width: 200px;
+}
+
+.calendar-logo {
+	width: 150px;
+}
+
+.service-first {
+	background-color: #1f92fa;
+}
+
+.service-second {
+	background-color: #dddddd;
+}
+
+.service-subscribe {
+	background-color: #eb4f1b;
+}
