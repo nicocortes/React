@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import covidContact from "../assets/covidContact.png";
+import covidLogo from "../assets/covidLogo.png";
 
 const CovidFooter = () => {
 	return (
@@ -8,7 +8,7 @@ const CovidFooter = () => {
 			<div className="row  pt-5">
 				<div className="col-12 col-md-4">
 					<Link to="/">
-						<img className="app-logo" src={covidContact} alt="Footer Logo" />
+						<img className="app-logo" src={covidLogo} alt="Footer Logo" />
 					</Link>
 				</div>
 				<div className="col-12 col-md-4">

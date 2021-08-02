@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
-import covidContact from "../assets/covidContact.png";
+import covidLogo from "../assets/covidLogo.png";
 
 const CovidNavbar = () => {
 	const history = useHistory();
@@ -10,7 +10,7 @@ const CovidNavbar = () => {
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div className="container-fluid">
 				<Link className="navbar-brand" to="/">
-					<img className="app-logo" src={covidContact} alt="App Logo" />
+					<img className="app-logo" src={covidLogo} alt="App Logo" />
 				</Link>
 				<button
 					className="navbar-toggler"

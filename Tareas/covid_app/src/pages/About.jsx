@@ -1,9 +1,12 @@
 import React from "react";
 import aboutBanner from "../assets/aboutBanner.jpg";
+import CovidFooter from "../components/CovidFooter";
+import CovidNavbar from "../components/CovidNavbar";
 
 const About = () => {
 	return (
 		<div>
+			<CovidNavbar />
 			<section>
 				<img className="about-banner" src={aboutBanner} alt="About Banner" />
 
@@ -45,6 +48,7 @@ const About = () => {
 					</div>
 				</div>
 			</section>
+			<CovidFooter />
 		</div>
 	);
 };

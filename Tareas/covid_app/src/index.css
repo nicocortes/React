@@ -5,7 +5,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-/* login */
+/*=========== Login ============ */
 
 .login-container {
 	height: 400px;
@@ -31,18 +31,14 @@ body {
 	width: 50%;
 }
 
-.login-logo-background {
-	background-color: #1f92fa;
-}
-
-/* navbar */
+/* =========== CovidNavbar ================ */
 
 .app-logo {
 	width: 60px;
 }
 
-/* ********** global ********** */
-#section-global-info {
+/* =========== CovidGlobalInfo ============= */
+.section-global-info {
 	background-color: #1f92fa;
 }
 
@@ -59,11 +55,10 @@ body {
 	color: rgb(77, 77, 77);
 }
 
-/************ search  **********/
-#section-search {
+/* =========== CovidSearch ===========*/
+.section-search {
 	height: 500px;
 	background-color: #dddddd;
-	/* background-color: #eb4f1b; */
 }
 
 .search-title {
@@ -73,7 +68,7 @@ body {
 	text-align: center;
 }
 
-/***** error  ******/
+/*=========== Error404 =================*/
 .error-title {
 	font-size: 100px;
 }
@@ -94,7 +89,7 @@ body {
 	height: 100vh;
 }
 
-/***** services */
+/*============= Services ===============*/
 .phone-logo {
 	width: 200px;
 }
@@ -115,7 +110,7 @@ body {
 	color: #eb4f1b;
 }
 
-/* about */
+/* ============== About ======================= */
 .about-banner {
 	width: 100%;
 }
@@ -130,24 +125,13 @@ body {
 	background-color: #dddddd;
 }
 
-/* **** contact */
+/*============= Contact ================== */
 .covid-logo-contact {
 	width: 200px;
 }
 
-.contact-container {
-	border: 5px solid black;
-	border-radius: 20px;
-	background-color: white;
-	padding: 20px;
-}
-
-.prueba {
+.contact-body {
 	padding-top: 100px;
 	height: 100vh;
 	background-color: #dddddd;
-}
-
-.colores {
-	color: #1f92fa;
 }

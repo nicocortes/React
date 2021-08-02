@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-import covidContact from "../assets/covidContact.png";
+import covidLogo from "../assets/covidLogo.png";
 
 const Login = () => {
 	const history = useHistory();
@@ -36,7 +36,7 @@ const Login = () => {
 			<div className="container text-center login-container">
 				<div className="row h-100">
 					<div className="col bg-dark login-border-logo d-flex align-items-center justify-content-center">
-						<img className="login-logo" src={covidContact} alt="Logo Covid" />
+						<img className="login-logo" src={covidLogo} alt="Logo Covid" />
 					</div>
 					<div className="col login-border-form bg-white d-flex flex-column justify-content-center  ">
 						<h3>

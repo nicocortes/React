@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import CovidFooter from "../components/CovidFooter";
 import CovidGlobalInfo from "../components/CovidGlobalInfo";
 import CovidNavbar from "../components/CovidNavbar";
 import CovidSearch from "../components/CovidSearch";
@@ -24,12 +25,13 @@ const Home = () => {
 	return (
 		<div>
 			<CovidNavbar />
-			<section id="section-global-info">
+			<section className="section-global-info">
 				<CovidGlobalInfo covidData={covidData} />
 			</section>
-			<section id="section-search">
+			<section className="section-search">
 				<CovidSearch />
 			</section>
+			<CovidFooter />
 		</div>
 	);
 };
